@@ -44,8 +44,8 @@ This project intentionally includes a recursive Fibonacci function to:
 
 ```
 AmoraCalc/
-├── loan_utils.py           # Core logic: loan calculator, fibonacci, factorial
-├── test_loan_utils.py      # Unit tests using pytest
+├── loans.py           # Core logic: loan calculator, fibonacci, factorial
+├── unit_tests.py      # Unit tests using pytest
 ├── README.md               # Project documentation
 ```
 
@@ -67,13 +67,13 @@ pip install pytest
 ### Run Unit Tests
 
 ```bash
-pytest test_loan_utils.py -v
+pytest test_loans.py -v
 ```
 
 ### Example Usage
 
 ```python
-from loan_utils import calculate_loan_schedule, fibonacci, factorial
+from loans import calculate_loan_schedule, fibonacci, factorial
 
 # Recursive Fibonacci
 print(fibonacci(7))  # Output: 13
